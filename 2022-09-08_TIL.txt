@@ -1,3 +1,45 @@
 ﻿2022-09-08 TIL
 
-1차 테스트 입니다.
+오늘은 git 에 대해서 배웠습니다.
+
+
+
+Git
+
+- Git은 버전관리를 위한 협업 관리 툴
+
+
+
+Github
+
+- Github 는 git 이라는 프로그램을 플랫폼화 한 커뮤니티 기능이 결합된 웹 서비스
+
+
+
+Git 은 local 환경과 remote 환경으로 구분할 수 있는데, local에서 작업 후 staging 에 commit 하고 이를 원격 저장소에 push 합니다. 
+
+
+
+원격저장소로부터 local로 가져오는 방식은 pull 과 fetch 가 있습니다.
+
+
+
+pull 은 단어 그대로 땡겨와서 내 브랜치에 머지하는 것이고 fetch는 내 local 에 임시 저장하는 개념으로 볼 수 있습니다.
+
+
+
+PR (Pull Request)
+
+- git 에서 협업 후 원만한 merge 를 위해 각각의 코드 작성자가 repository에 request
+
+- PR 이라고 항상 들었었는데 Pull 과 Push 의 개념을 알고 나서 생각해보니
+
+Repository 의 소유자 입장에서 Pull 이구나 그래서 Pull Request 라고 썼다는 점을 느낄 수 있었습니다.
+
+
+
+Master, Main
+
+- Gitbash 나 Sourcetree 에서는 Master 브랜치를 Main 브랜치 이름을 수정 필요
+
+- 이슈에 대해서 기사로만 접했었는데 실질적으로 사용하면서 접하니 community 에 속해가는 느낌이 들었습니다.
