@@ -14,4 +14,4 @@
 - 회고 https://github.com/siyoungoh/til/blob/main/sample/retrospective.md 
 
 -----
-[핵심쏙속 Git 강의 by 오시영 튜터 -스파르타코딩클럽](https://spartacodingclub.kr/online/git) 에서 사용한 숙제 리포지토리
+[핵심쏙속 Git 강의 by 오시영 튜터 -스파르타코딩클럽](https://spartacodingclub.kr/online/git) 에서 사용한 숙제 리포지토리를 업데이트 해서 사용 중
