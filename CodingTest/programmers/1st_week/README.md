@@ -4,7 +4,7 @@
 
 3. [자릿수 더하기](https://school.programmers.co.kr/learn/courses/30/lessons/12931)
 
-4. 자연수 뒤집어 배열로 만들기
+4. [자연수 뒤집어 배열로 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/12932)
 
 5. 숫자 문자열과 영단어 - 2021 카카오 채용연계형 인턴십
 
