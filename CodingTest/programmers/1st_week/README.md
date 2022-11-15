@@ -9,6 +9,7 @@
 5. [숫자 문자열과 영단어 - 2021 카카오 채용연계형 인턴십](https://school.programmers.co.kr/learn/courses/30/lessons/81301)
 
 노가다성으로 풀었으나 제한시간에 걸림
+-> replace 까지는 생각을 해냈는데, 왜 못했을까 다시금 보니 반복문이 돌아가는 대상을 잘못 생각함
 
 6. [체육복 - 탐욕법(Greedy)](https://school.programmers.co.kr/learn/courses/30/lessons/42862)
 
