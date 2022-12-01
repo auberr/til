@@ -14,6 +14,9 @@ def solution(n):
 solution(118372)
 
 
+string = [x for x in str(123453)]
+print(string)
+
 # def solution(n):
 #     answer = 0
 #     answer_list =[]

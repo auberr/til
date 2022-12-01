@@ -11,3 +11,8 @@ def solution(a, b):
     return answer
 
 solution(3, 5)
+
+a = 5
+b = 1
+print(range(a, b+1))
+print(type(range(a, b+1)))

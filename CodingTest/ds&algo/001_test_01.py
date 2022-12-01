@@ -1,3 +1,67 @@
+list1 = [1, 2, 3, 4, 5]
+list2 = [6, 7, 8, 9, 10]
+
+my_function = lambda a, b: a+b
+result = map(my_function, list1, list2)
+print(list(result))
+
+
+add = lambda x, y : x + y
+print(add(1,2))
+
+product_xy = []
+for x in [1, 2, 3]:
+    for y in [2, 4, 6]:
+        product_xy.append(x * y)
+print(product_xy)
+        
+product_xy = [x * y for x in [1, 2, 3] for y in [2, 4, 6]]
+print(product_xy)
+
+[n for n in range(1, 31)
+ if n % 2 ==0 
+ if n % 5 ==0]
+
+[x for x in range(10)]
+
+[x * x for x in range(10)]
+
+[x for x in range(10) if x % 2 == 0]
+
+[x for x in range(10) if x % 2 == 1]
+
+[x for x in range(10) if x % 2 == 0]
+
+[x for x in range(10) if x % 2 == 1]
+
+ages = [34, 39, 20, 18, 13, 54]
+adult_ages = list(filter(lambda x: x>=19, ages))
+print('성년 리스트:', adult_ages)
+
+ages = [34, 39, 20, 18, 13, 54]
+print('성년 리스트:', [x for x in ages if x >= 19])
+
+
+
+# print(range(10))
+# print(list(range(10)))
+
+# print([x for x in range(10)])
+
+# print([x+10 for x in range(10)])
+
+# a = [1,2,3,4,5,6,7]
+# a = list(map(lambda x: x**2, a))
+# print(a)
+
+# a = [1,2,3,4,5,6,7]
+# a = [x**2 for x in a]
+# print(a)
+
+# a = [x**2 for x in range(1,8)]
+# print(a)
+
+
 import queue
 
 data = queue.Queue()
