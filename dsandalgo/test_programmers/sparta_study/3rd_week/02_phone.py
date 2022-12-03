@@ -17,3 +17,7 @@ def solution(phone_number):
     return answer
 
 solution('01033334444')
+
+number = "123456789"
+print(number[:-4])
+print(number[-4:])
