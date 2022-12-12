@@ -12,6 +12,8 @@ arr.sort()
 print("input data: ", arr)
 
 # key 를 기준으로 정렬하기
-arr = [('Smith', 95), ('John', 78), ('Paul', 87)]
+arr = [('Smith', 95), ('John', 120), ('Paul', 87)]
 res = sorted(arr, key = lambda x: x[1])
 print(res)
+res1 = sorted(arr, key = lambda x: x[0])
+print(res1)

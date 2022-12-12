@@ -10,6 +10,7 @@
 
 노가다성으로 풀었으나 제한시간에 걸림
 -> replace 까지는 생각을 해냈는데, 왜 못했을까 다시금 보니 반복문이 돌아가는 대상을 잘못 생각함
+-> 다시 풀때는 배열의 index 반환값이 잘 생각이 안남
 
 6. [체육복 - 탐욕법(Greedy)](https://school.programmers.co.kr/learn/courses/30/lessons/42862)
 
