@@ -14,7 +14,7 @@ def solution(citations):
     for i in citations:
         # i 번 이상 인용
         if i >= 0:
-            
+            pass
         # i 편 이상
 
         

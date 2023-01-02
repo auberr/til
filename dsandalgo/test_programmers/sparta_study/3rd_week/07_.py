@@ -20,6 +20,9 @@ def solution(s):
 
 solution("()()")
 
+# a-1 b-1 
+# c -1 c-2  / c-3 사례
+
 print(solution("()()"))
 print(solution("(())()"))
 print(solution(")()("))

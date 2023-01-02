@@ -6,7 +6,6 @@
 6. [예산 - Summer/Winter Coding(~2018)](https://school.programmers.co.kr/learn/courses/30/lessons/12982)
 7. [K번째수 - 정렬](https://school.programmers.co.kr/learn/courses/30/lessons/42748)
 
-
 8. [같은 숫자는 싫어 - 스택/큐](https://school.programmers.co.kr/learn/courses/30/lessons/12906)
 어떤식으로 접근해야 되는지 모르겠음
 
