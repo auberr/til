@@ -1,5 +1,12 @@
+def same_group(arr):
+    answer = []
+    for i in range(len(arr)):
+        for j in range(i+1, len(arr)):
+            answer.append([arr[i], arr[j]])
+    
+    return answer
 
-
+print(same_group(["Tom", "Jerry", "Mike"]))
 
 # def same_name(arr):
 #     same_name_list = []
