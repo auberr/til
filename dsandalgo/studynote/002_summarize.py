@@ -40,11 +40,6 @@ def summarize_string(input_str):
             
     print(new_list)
                 
-                
-            
-        
-            
-            
             
         
     # 1. for문으로 input_str 을 돈다.
@@ -57,3 +52,6 @@ def summarize_string(input_str):
 input_str = "acccdeee"
 
 print(summarize_string(input_str))
+
+
+
