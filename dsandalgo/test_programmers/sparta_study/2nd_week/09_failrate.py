@@ -1,33 +1,76 @@
-from functools import cmp_to_key
+# 문제가 길때의 팁
+# 문제에서 주어진 변수가 많을 때는 반드시 주석으로
+# 1. 각 변수의 뜻
+# 2. 구해야 하는 값
 
-def compare(a, b):
-    if a[1] == b[1]:
-        return a[0] - b[0]
-    return b[1] - a[1]
+
+# N = 전체 스테이지의 개수
+# stages = 게임을 이용하는 사용자가 멈춰 있는 스테이지 번호 배열
+
+
+# len(stages) = 전체 사용자 수
+
+# 전체 사용자 수
+# 해당 스테이지를 클리어한 사람
+# 해당 스테이지에서 막힌 사람
+
+# -> 전부 stages 에서 도출할 수 있다.
+
+
+# 구해야하는 것 = 실패율이 높은 스테이지 번호부터 내림차순 배열
+
+# 문제 풀기
+# 1. 스테이지별 실패을 구하기
+# 2. 실패율이 높은 스테이지부터 내림차순 정렬
+# ( 실패율을 내림차순 하는 것이 아니다 )
+
+# 1. 스테이지별 실패율을 구해보자
+
 
 def solution(N, stages):
     answer = []
     total = len(stages)
-    fails = []
 
-    users = [0 for _ in range(N+1)]
-    
-    for s in stages:
-        users[s-1] += 1
+    #실패율 구하기
+    stage_ppl = []
 
-    for i in range(N):
-        if users[i] == 0:
-            fails.append((i+1, 0))
+    for i in range(1, N+1):
+        # 현재 스테이지에 도착한 인원
+        num = stages.count(i)
+        if num == 0:
+            stage_ppl.append(0)
         else:
-            fails.append((i+1, users[i] / total))
-            total -= users[i]
+            stage_ppl.append(num/total)
+        # 다음 스테이지로 넘어가는 인원이 이전 스테이지 시작인원과 다름
+        # 5명이 스테이지에 들어왔어도 3명이 클라이얹트면 3명부터 시작
+        total -= stages.count(i)
 
-    for f in sorted(fails, key=cmp_to_key(compare)):
-        answer.append(f[0])
-    
+    # 실패율을 기준으로 내림차순 정렬
+    # 실패율 자체가 아니라
+    # 실패율에 해당하는 스테이지를 출력하기!
+    for i in range(N):
+        # 현재 가장 큰 값의 인덱스를 구해서
+        pop_idx = stage_ppl.index(max(stage_ppl))
+        # 그 스테이지 (인덱스 + i ) append
+        answer.append(pop_idx + 1)
+        stage_ppl[pop_idx] = -1
+        
     return answer
+    
 
-print(solution(5, [2, 1, 2, 6, 2, 4, 3, 3]))
+
+
+
+
+
+
+
+
+
+
+
+
+# 내가 시도해본 내용
 
 # # 1. 정렬
 # # 2. ~N 까지 각 stg에 맞는 배열로 만듬
@@ -73,7 +116,6 @@ print(solution(5, [2, 1, 2, 6, 2, 4, 3, 3]))
 #         failrate.append(1-stage_list[i]/all_list[i])
 #         failrate_index.append([1-stage_list[i]/all_list[i], i])
 
-    
 #     a= sorted(failrate, reverse=True)
 #     print(a)
 
@@ -109,3 +151,24 @@ print(solution(5, [2, 1, 2, 6, 2, 4, 3, 3]))
 # print(solution(5, [2, 1, 2, 6, 2, 4, 3, 3]))
 
 # print(solution(4, [4,4,4,4,4]))
+
+
+
+# def solution(N, stages):
+#     answer = []
+#     list_stages = []
+#     for i in range(N):
+#         list_stages.append(0)
+        
+#     print(list_stages)
+    
+#     for i in range(0, len(stages)):
+#         print(stages[i])
+#         for j in range(1, N+1):
+#             if stages[i] == j:
+#                 list_stages[]
+            
+#     print(list_stages)
+#     return answer
+
+# print(solution(5, [2, 1, 2, 6, 2, 4, 3, 3]))
