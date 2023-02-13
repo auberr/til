@@ -9,7 +9,7 @@
 
 04. - [x] [콜라츠 추측](https://school.programmers.co.kr/learn/courses/30/lessons/12943)
 
-05. - [ ] [수박수박수박수박수박수?](https://school.programmers.co.kr/learn/courses/30/lessons/12922)
+05. - [x] [수박수박수박수박수박수?](https://school.programmers.co.kr/learn/courses/30/lessons/12922)
 
 06. - [ ] [가운데 글자 가져오기](https://school.programmers.co.kr/learn/courses/30/lessons/12903)
 
